@@ -34,7 +34,7 @@
 withMetaFileNameList=()
 fileNameList=()
 
-for file in `git diff --cached --diff-filter=A --name-only` ; do
+for file in `git diff --cached --diff-filter=AD --name-only` ; do
 	if [[ "${file}" =~ "/Assets/" ]]
 	then
 		if [[ "${file}" == *.meta ]]
